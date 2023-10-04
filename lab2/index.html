@@ -23,9 +23,19 @@
             background-color: black;
         }
         body {
-  background-color: blue; /* Blue background */
+            background-color: blue; /* Blue background */
+        }
+        a:link {
+            text-decoration: none;
+        }
+/* Add underline on hover */
+        a:hover {
+            text-decoration: underline;
+        }
+        .movie>li::first-letter {
+            font-size: 1.5em;
+            line-height: 1; /* Adjust as needed for proper alignment */
 }
-
 </style>
 </head>
 <body>
@@ -46,10 +56,10 @@
     </section>
     <section id="movies">
         <h2>Favorite Movies</h2>
-        <ul>
-            <li>Movie 1: Everything Everywhere All at Once</li>
-            <li>Movie 2: Inferno </li>
-            <li>Movie 3: Joker</li>
+        <ul class="movie">
+            <li>Everything Everywhere All at Once <a href="https://www.imdb.com/title/tt6710474/">IMDB</a></li>
+            <li>Inferno <a href="https://www.imdb.com/title/tt3062096/?ref_=fn_al_tt_1">IMDB</a> </li>
+            <li>Joker <a href="https://www.imdb.com/title/tt7286456/?ref_=fn_al_tt_1">IMDB</a></li>
         </ul>
     </section>
     <section id="moods">
@@ -67,6 +77,15 @@
             <li>Eyouel: Dress nice shirts </li>
         </ul>
     </section>
-    
+    <p>
+        <a href="https://validator.w3.org/check?url=https://utkuaysev.github.io/WAP/lab2">
+        <img width="100" height="50" src="images/html.png" alt="Valid HTML!"/>
+        </a>
+        </p>
+        <p>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://utkuaysev.github.io/WAP/lab2">
+        <img width="100" height="50" src="images/css.png" alt="Valid CSS!"/>
+        </a>
+    </p>
 </body>
 </html>
