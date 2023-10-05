@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .topnav a {
+            float: left;
+            padding: 14px 16px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topnav-right a:hover {
+            background-color: #ddd;
+            color: black;
+            cursor: pointer;
+        }
+
+        .topnav-right a {
+            float: right;
+            font-size: 12px;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #297163;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+        }
+
+        .left {
+            flex: 50%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .right {
+            flex: 50%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: right;
+            background: #ddd;
+        }
+
+        .row {
+            text-align: center;
+        }
+
+        .login-container {
+            width: 300px;
+            text-align: center;
+        }
+
+
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .normal-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .remember-forgot-container {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .remember-forgot-container a {
+            padding: 5px;
+        }
+
+        #azure {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #azure-img {
+            width: 320px;
+            height: 70px;
+        }
+        #validator-img{
+            width: 60px;
+            height: 60px;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a><img src="images/miu.png" alt="Maharishi IT"></a>
+        <a>|</a>
+        <a>Maharishi University It Dept</a>
+        <div class="topnav-right">
+            <a>Login</a>
+            <a>Knowledge Base</a>
+            <a>Submit Ticket</a>
+            <a>Agent Portal</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Welcome to our support center</h1>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="left">
+            <h2>Login</h2>
+            <p>Login to know the status ticket
+            <p>
+                <button id="azure"><img id="azure-img" src="images/azure ad.png"></img> </button>
+            <h4>Or login using</h4>
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="remember-forgot-container">
+                <input type="checkbox" id="remember">
+                <a for="remember">Remember Me</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="normal-button">Login</button>
+        </div>
+        <div class="right">
+            <p>Login to track your existing support request.If you have not created a ticket yet then you would need to
+                <span style="font-weight: bold;">register</span> or
+                <span style="font-weight: bold;">create a new ticket</span> to begin.
+            </p>
+            <button class="normal-button">Submit ticket </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright 2020. All rights reserved</p>
+    </div>
+    <p>
+        <a href="https://validator.w3.org/check?url=https://utkuaysev.github.io/WAP/lab3">
+        <img id="validator-img" width="100" height="50" src="../images/html.png" alt="Valid HTML!">
+        </a>
+        </p>
+        <p>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://utkuaysev.github.io/WAP/lab3">
+        <img id="validator-img" width="100" height="50" src="../images/css.png" alt="Valid CSS!">
+        </a>
+    </p>
+</body>
+
+</html>
