@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-left mt-5">
+            <div class="col-md-6">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="mail">Email address</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Enter email"
+                            required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input placeholder="Password" type="password" class="form-control" id="password" name="password" 
+                        required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}$"
+                        title="Password must be at least 10 characters long and contain at least 
+                        one number and one uppercase and lowercase letter.">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website</label>
+                        <input placeholder="Website Url" type="text" class="form-control" id="website" name="website" 
+                        required pattern="^(https:\/\/)|(http:\/\/).*"
+                        title="Website should start with http:// or https://">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

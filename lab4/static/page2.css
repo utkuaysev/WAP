@@ -1,0 +1,29 @@
+<style>
+        .topnav a {
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topnav-right a:hover {
+            background-color: #ddd;
+            color: black;
+            cursor: pointer;
+        }
+
+        .topnav-right {
+            float: right;
+            font-size: 12px;
+        }
+
+        h3 {
+            padding: 60px;
+        }
+
+        .needs-validation {
+            padding: 50px;
+        }
+        .form-group{
+            margin-left: 600px;
+        }
+    </style>
