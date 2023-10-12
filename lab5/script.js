@@ -109,5 +109,5 @@ console.log(computeSumOfSquares([1,2,3,4]))
 printOddNumbersOnly([1,2,3,4])
 console.log(computeSumOfSquaresOfEvensOnly([1,2,3,4]))
 printFibo(10, 0, 1)
-printFibo(4, 0, 1)
+printFibo(10, 0, 1)
 
