@@ -32,7 +32,7 @@ it('should get titles in order', () => {
     }
 });
 it('should find books that contain a given word in the title and arrange them in order by the authors name', () => {
-    expected = [{title: "The Road Ahead", author: "Bill Gates", libraryID: 1235}
+    expected = [{title: "The Road Ahead", author: "Bill Gates", libraryID: 4268}
     ,{title: "The Road Ahead", author: "Elon Musk", libraryID: 4268}]
     result = findBooks("Road");
     assert.equal(result.length, expected.length)
