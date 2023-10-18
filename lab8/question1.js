@@ -33,7 +33,7 @@ s2.inputNewGrade(12);
 
 let arr = [s1, s2]
 for (const elem of arr) {
-    console.log(elem.firstName + " " + elem.lastName + ":" + elem.computeAverageGrade());
+    console.log(elem.firstName + " " + elem.lastName ":" + elem.computeAverageGrade());
 }
 let sumAll = 0;
 let totalLen = 0;
