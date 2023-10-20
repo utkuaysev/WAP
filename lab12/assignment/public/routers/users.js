@@ -6,7 +6,8 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    res.send("Routing "+ req.method + " "+req.body);
-});
+    const formData = req.body;
+    res.send(`You submitted: ${JSON.stringify(formData)}`)}
+);
 
 module.exports = router;
